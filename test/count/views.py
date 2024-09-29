@@ -12,7 +12,7 @@ def food_cal(request):
             query = request.POST.get('query', '')
             serving_size = int(request.POST.get('serving_size', 0))
             api_url = 'https://api.calorieninjas.com/v1/nutrition?query='
-            headers = {'X-Api-Key': 'nEW83hqBTmgNZry0Y7UfOQ==mmKNGbDyQnao1OZg'}
+            headers = {'X-Api-Key': 'YOUR-API-KEY'}
 
             try:
                 api_request = requests.get(api_url + query, headers=headers)
