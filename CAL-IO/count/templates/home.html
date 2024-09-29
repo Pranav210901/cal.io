@@ -1,0 +1,51 @@
+{% load static %}
+{% load mathfilters %}
+{% load humanize %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css" />
+    <title>Cal.io Calorie Finder</title>
+</head>
+
+<body style="background-color: #ad96f3;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center mb-3">
+                <img src="{% static 'images/logo.png' %}" class="img-responsive logo mb-3" style="width: 300px; height: auto;" />
+            </div>
+        
+        
+            <div class="col-md-6" >
+                <div class="card mb-4" style="background-color: #ce0f88;">
+                    <div class="card-body">
+                    <h1 style="color:rgb(0, 0, 0)">BMR Cal</h1>
+                    <a href="bmrcal" style="color:#fcacd9">Try out my BMR Calculator</a>
+                    
+                </div>
+            </div>
+            <div class="col-md-6" ></div>
+                <div class="card mb-4" style="background-color: #ce0f88;">
+                    <div class="card-body">
+    
+                    <h1 style="color:rgb(0, 0, 0)">Food Cal</h1>
+                    <a href="foodcal" style="color:#fcacd9">Try out my food Calculator</a>
+                </div>
+            </div>
+            <div class="col-md-6" ></div>
+                <div class="card mb-4" style="background-color: #ce0f88;">
+                    <div class="card-body">
+    
+                    <h1 style="color:rgb(0, 0, 0)">Cal.AI</h1>
+                    <a href="foodcal" style="color:#fcacd9">Try out my food Calculator</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
